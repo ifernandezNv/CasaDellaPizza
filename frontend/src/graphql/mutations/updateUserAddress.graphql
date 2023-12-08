@@ -1,0 +1,6 @@
+mutation UpdateUserAddress($id: ID!, $updateUserAddressInput: UserInputUpdateAddress) {
+    updateUserAddress(id: $id, userInputUpdateAddress: $updateUserAddressInput) {
+        status
+        message
+    }
+}

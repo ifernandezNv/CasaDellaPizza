@@ -1,0 +1,14 @@
+query GetOrder($getOrderId: String) {
+  getOrder(id: $getOrderId) {
+    id
+    userId
+    address {
+      street
+      block
+      houseNumber
+    }
+    statusOrder
+    date
+    total
+  }
+}

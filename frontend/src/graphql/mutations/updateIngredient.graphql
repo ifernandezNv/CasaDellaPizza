@@ -1,0 +1,6 @@
+mutation UpdateIngredient($ingredientInput :IngredientInput) {
+    updateIngredient(ingredientInput: $ingredientInput) {
+        status
+        message
+    }
+}

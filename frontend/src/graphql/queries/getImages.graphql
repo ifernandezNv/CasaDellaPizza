@@ -1,0 +1,19 @@
+query GetImages {
+  getImages {
+    id
+    name
+    format
+    reference {
+      ... on Product {
+        id
+      }
+      ... on Promotion {
+        id
+      }
+      ... on Ingredient {
+        id
+      }
+    }
+    url
+  }
+}

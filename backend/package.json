@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "@apollo/server": "^4.9.4",
+    "@graphql-codegen/typescript-mongodb": "^3.0.0",
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^1.41.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "graphql": "^16.8.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.2"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "start": "tsc && node dist/index.js",
+    "dev": "nodemon index.ts",
+    "watch": "graphql-codegen -w",
+    "codegen": "graphql-codegen --config codegen.yaml"
+  },
+  "main": "index.ts",
+  "devDependencies": {
+    "@eddeee888/gcg-typescript-resolver-files": "^0.7.1",
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/client-preset": "^4.1.0",
+    "@graphql-codegen/introspection": "4.0.0",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-operations": "^4.0.1",
+    "@graphql-codegen/typescript-react-apollo": "^4.0.0",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
+    "@graphql-typed-document-node/core": "^3.2.0",
+    "@types/bcrypt": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.4",
+    "@types/node": "^20.8.5",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.2.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

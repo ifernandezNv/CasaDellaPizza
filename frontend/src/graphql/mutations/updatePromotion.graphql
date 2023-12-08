@@ -1,0 +1,6 @@
+mutation UpdatePromotion($promotionInput: PromotionInput) {
+  updatePromotion(promotionInput: $promotionInput) {
+    status
+    message
+  }
+}

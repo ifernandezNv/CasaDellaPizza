@@ -1,0 +1,17 @@
+mutation UpdateProduct($productInput: UpdateProductInput) {
+  updateProduct(productInput: $productInput) {
+      status
+      message
+      id
+      name
+      description
+      category
+      sizePiecesGrams
+      ingredients {
+        name
+        quantity
+      }
+      image
+      price
+  }
+}

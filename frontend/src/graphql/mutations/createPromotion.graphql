@@ -1,0 +1,20 @@
+mutation CreatePromotion($promotionInput: PromotionInput) {
+  createPromotion(promotionInput: $promotionInput) {
+    status
+    message
+    id
+    name
+    price
+    image
+    avaliable
+    endDate
+    product {
+      name
+      ingredients {
+        name
+        quantity
+      }
+      sizePiecesGrams
+    }
+  }
+}

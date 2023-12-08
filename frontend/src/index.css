@@ -1,0 +1,68 @@
+@import '@fontsource/lato/100.css';
+@import '@fontsource/lato/300.css';
+@import '@fontsource/lato/400.css';
+@import '@fontsource/lato/700.css';
+@import '@fontsource/lato/900.css';
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;300;400;500;600;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input:checked{
+    background-color: #FFB800;
+}
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #D9D9D9;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #FFB800;
+    border-radius: 20px;
+}
+ 
+/* Backgrounds */
+.background-transparent{
+    background: rgba(0, 0, 0, 0.50);
+}
+.background-navbar{
+    border: 1px solid var(--border-bottom-navbar, rgba(0, 0, 0, 0.20));
+    background: var(--white, #FFF);
+}
+.bg-modal{
+    background: var(--bg-modal, rgba(0, 0, 0, 0.70));
+}
+
+/* Shadows */
+.card-shadow{
+    border-radius: 12px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.60);
+}
+
+.promotion-shadow{
+    border-radius: 20px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.60);
+}
+
+.shadow{
+    background: var(--white, #FFF);
+    box-shadow: 0px 20px 4px 0px rgba(0, 0, 0, 0.99);
+}
+
+/* Modal styles */
+.modal{
+    position: 'absolute';
+    top: '50%';
+    left: '50%';
+    transform: 'translate(-50%, -50%)';
+    background-color: #FFF;
+    border: '2px solid #000';
+    box-shadow: 24;
+}

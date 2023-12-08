@@ -1,0 +1,6 @@
+mutation DeleteIngredient($deleteIngredientId: ID!) {
+  deleteIngredient(id: $deleteIngredientId) {
+    status
+    message
+  }
+}

@@ -1,0 +1,19 @@
+overwrite: true
+schema: "./schema.graphql"
+generates:
+  src/__generated__/types.ts:
+    documents:
+      - "src/**/!(*.d).{ts,tsx}"
+      - "src/**/*.graphql"
+      - "!src/__generated__/graphql/*"
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+    config: 
+      preResolveTypes: true
+      enumsAsTypes: true
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"

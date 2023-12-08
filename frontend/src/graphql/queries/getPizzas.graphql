@@ -1,0 +1,15 @@
+query GetPizzas {
+  getPizzas {
+    id
+    name
+    description
+    price
+    category
+    sizePiecesGrams
+    image
+    ingredients {
+      name
+      quantity
+    }
+  }
+}

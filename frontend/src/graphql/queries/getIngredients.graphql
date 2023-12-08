@@ -1,0 +1,10 @@
+query getIngredients{
+  getIngredients {
+    id
+    name
+    zIndex
+    image
+    pricePerPortion
+    avaliable
+  }
+}

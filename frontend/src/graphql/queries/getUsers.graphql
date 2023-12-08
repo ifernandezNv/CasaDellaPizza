@@ -1,0 +1,19 @@
+query GetUsers {
+  getUsers {
+    id
+    name
+    email
+    orders {
+      userId
+      products {
+        name
+        price
+        ingredients {
+          name
+          quantity
+        }
+      }
+      total
+    }
+  }
+}

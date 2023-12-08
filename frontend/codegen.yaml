@@ -1,0 +1,25 @@
+overwrite: true
+schema: http://localhost:4000/graphql
+generates:
+  ./src/__generated__/types.ts:
+    documents:
+      - "src/**/!(*.d).{ts,tsx}"
+      - "src/**/*.graphql"
+      - "!src/__generated__/types.ts"
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"
+      - "typescript-operations"
+      - "typescript-apollo-client-helpers"
+      - "typescript-react-apollo"
+    config:
+      fetcher:
+        func: "../config/graphql-fetcher.ts"
+        isReactHook: true
+      preResolveTypes: true
+      enumsAsTypes: true
+      exposeFetcher: true
+      exposeQueryKeys: true
+  ./graphql.schema.json:
+    plugins:
+      - "introspection"

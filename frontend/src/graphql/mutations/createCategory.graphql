@@ -1,0 +1,6 @@
+mutation CreateCategory($categoryInput: CategoryInput) {
+    createCategory(categoryInput: $categoryInput) {
+        status
+        message
+    }
+}

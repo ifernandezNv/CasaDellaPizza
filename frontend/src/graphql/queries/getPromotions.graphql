@@ -1,0 +1,25 @@
+query GetPromotions {
+  getPromotions {
+    id
+    name
+    description
+    endDate
+    avaliable
+    price
+    importantDetail
+    image
+    product {
+      category
+      description
+      image
+      price
+      sizePiecesGrams
+      name
+      id
+      ingredients {
+        quantity
+        name
+      }
+    }
+  }
+}

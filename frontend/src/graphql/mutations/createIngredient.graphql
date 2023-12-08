@@ -1,0 +1,12 @@
+mutation CreateIngredient($ingredientInput: IngredientInput) {
+    createIngredient(ingredientInput: $ingredientInput) {
+        status
+        id
+        message
+        name
+        image
+        avaliable
+        pricePerPortion
+        zIndex
+    }
+}

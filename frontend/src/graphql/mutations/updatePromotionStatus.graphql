@@ -1,0 +1,6 @@
+mutation UpdatePromotionStatus($promotionId: String) {
+  updatePromotionStatus(promotionId: $promotionId) {
+    status
+    message
+  }
+}

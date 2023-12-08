@@ -1,0 +1,16 @@
+query GetPromotion($getPromotionId: String) {
+  getPromotion(id: $getPromotionId) {
+    id
+    name
+    description
+    endDate
+    avaliable
+    price
+    importantDetail
+    product {
+      name
+      id
+    }
+    image
+  }
+}

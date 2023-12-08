@@ -1,0 +1,10 @@
+query GetIngredient($name: String) {
+  getIngredient(name: $name) {
+    id
+    name
+    zIndex
+    image
+    avaliable
+    pricePerPortion
+  }
+}

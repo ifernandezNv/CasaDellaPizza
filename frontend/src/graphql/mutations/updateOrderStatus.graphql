@@ -1,0 +1,6 @@
+mutation UpdateOrderStatus($updateOrderStatusId: String, $status: OrderStatusEnum) {
+  updateOrderStatus(id: $updateOrderStatusId, status: $status) {
+    status
+    message
+  }
+}

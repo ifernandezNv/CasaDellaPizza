@@ -1,0 +1,14 @@
+query GetOrders {
+  getOrders {
+    id
+    userId
+    statusOrder
+    address {
+      street
+      block
+      houseNumber
+    }
+    date
+    total
+  }
+}

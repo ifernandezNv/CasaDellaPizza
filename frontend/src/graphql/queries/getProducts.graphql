@@ -1,0 +1,15 @@
+query GetProducts {
+  getProducts {
+    ingredients {
+      quantity
+      name
+    }
+    image
+    category
+    sizePiecesGrams
+    price
+    description
+    name
+    id
+  }
+}

@@ -1,0 +1,15 @@
+query GetComplements($categoryInput: String) {
+    getComplements(categoryInput: $categoryInput) {
+        id
+        name
+        description
+        price
+        category
+        sizePiecesGrams
+        image
+        ingredients {
+            name
+            quantity
+        }
+    }
+}

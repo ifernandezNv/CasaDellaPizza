@@ -1,0 +1,15 @@
+query GetProduct($getProductId: String) {
+    getProduct(id: $getProductId) {
+        id
+        category
+        image
+        ingredients {
+            quantity
+            name
+        }
+        price
+        name
+        description
+        sizePiecesGrams
+    }
+}

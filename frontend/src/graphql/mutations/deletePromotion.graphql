@@ -1,0 +1,6 @@
+mutation DeletePromotion($deletePromotionId: ID!) {
+  deletePromotion(id: $deletePromotionId) {
+    status
+    message
+  }
+}
